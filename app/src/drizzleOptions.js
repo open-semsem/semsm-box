@@ -1,15 +1,15 @@
 import Web3 from "web3";
 
-import NFTToken from "./contracts/NFTToken.json";
+import TokenErc20 from "./contracts/TokenErc20.json";
 
 const options = {
   web3: {
     block: false,
     customProvider: new Web3("ws://localhost:8545"),
   },
-  contracts: [  NFTToken],
+  contracts: [  TokenErc20],
   // events: {
-  //   NFTToken: ["NFTToken"],
+  //   TokenErc20: ["TokenErc20"],
   // },
 };
 

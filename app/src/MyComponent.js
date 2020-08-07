@@ -41,14 +41,14 @@ export default ({ drizzle, drizzleState }) => {
           <ContractData
             drizzle={drizzle}
             drizzleState={drizzleState}
-            contract="NFTToken"
+            contract="TokenErc20"
             method="totalSupply"
             methodArgs={[{ from: drizzleState.accounts[0] }]}
           />{" "}
           <ContractData
             drizzle={drizzle}
             drizzleState={drizzleState}
-            contract="NFTToken"
+            contract="TokenErc20"
             method="symbol"
             hideIndicator
           />
@@ -58,7 +58,7 @@ export default ({ drizzle, drizzleState }) => {
           <ContractData
             drizzle={drizzle}
             drizzleState={drizzleState}
-            contract="NFTToken"
+            contract="TokenErc20"
             method="balanceOf"
             methodArgs={[drizzleState.accounts[0]]}
           />
@@ -66,7 +66,7 @@ export default ({ drizzle, drizzleState }) => {
         <h3>Send Tokens</h3>
         <ContractForm
           drizzle={drizzle}
-          contract="NFTToken"
+          contract="TokenErc20"
           method="transfer"
           labels={["To Address", "Amount to Send"]}
         />
