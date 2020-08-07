@@ -1,0 +1,22 @@
+{
+  "name": "contract-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    
+    "test": "test"
+  },
+  "scripts": {
+    "init": "npm i && npm i --prefix app",
+    "start": "npm start --prefix app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Eman Herawy",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "@openzeppelin/contracts": "^2.5.0"
+  }
+}
